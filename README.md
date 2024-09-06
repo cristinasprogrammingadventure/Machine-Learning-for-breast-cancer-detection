@@ -17,7 +17,7 @@ Nuclear Texture: Variation in grayscale values within the nucleus may indicate m
 Nuclear Symmetry: Cancerous nuclei tend to be less symmetrical.
 Fractal Dimension: Measures the complexity of the nuclear contour, which can signal malignancy.
 
-This dataset's nuclear features are critical for training machine learning models to classify tumors as benign or malignant.
+This dataset's nuclear features are critical for training machine learning models to classify tumors as benign or malignant. They allow machine learning models to distinguish between benign and malignant tumors, though the small tissue sample can occasionally lead to false negatives. The main objective in this analysis and training is to see which classification models best suit the medical data in the dataset and minimize, detecting a maximum of positive real cancer cases. Avoid getting false negatives is indeed a priority, considering the psychological effects of false positives in cancer detection versus the possibly letal physical effects (and also psychological) of a false negative diagnosis.
 
 Sources: National Cancer Institute (NCI), American Cancer Society, MedlinePlus.
 
