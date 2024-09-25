@@ -23,8 +23,9 @@ Sources: National Cancer Institute (NCI), American Cancer Society, MedlinePlus.
 
 ### Machine Learning 
 
-#### Models 
-For the breast cancer detection project, I used classification models such as 
+#### We will experiment with nine Machine Learning models in this the breast cancer detection project. These classification models will be trained and tested **firstly on the whole dataset of 32 variables (including ID + target) and afterwards, we'll do the same on a reduced dataset using only 17 of the variables, which were chosen with the "features importance" formula matched with correlations. 
+
+Traing models with **PySpark**:
 
 * Logistic Regression
 * Decision Tree
@@ -33,11 +34,18 @@ For the breast cancer detection project, I used classification models such as
 * Naive Bayes
 * Multilayer Perceptron
 * Linear SVC
+
+Traing models with **Scikit-Learn** (given that Spark does not load these two models):
+
 * XGBClassifier
 * Support Vector Machines (SVM). 
 
 #### Models' evaluation metrics
-Evaluation metrics included 
+
+Finally, we evaluate checking how each classification model gives best resuults and comment how reducing the number of features to train has affected the results.
+
+Evaluation metrics valued and discussed:
+
 * Accuracy
 * Precision
 * Recall
