@@ -23,7 +23,7 @@ Sources: National Cancer Institute (NCI), American Cancer Society, MedlinePlus.
 
 ### Machine Learning 
 
-#### We will experiment with nine Machine Learning models in this the breast cancer detection project. These classification models will be trained and tested **firstly on the whole dataset of 32 variables (including ID + target) and afterwards, we'll do the same on a reduced dataset using only 17 of the variables, which were chosen with the "features importance" formula matched with correlations. 
+We will experiment with nine Machine Learning models in this the breast cancer detection project. These classification models will be trained and tested **firstly on the whole dataset of 32 variables** (including ID + target) and afterwards, we'll do the same on a **reduced dataset using only 17 of the variables**, which were based on the **"features importance"** calculus matched with **correlations results**. 
 
 Traing models with **PySpark**:
 
