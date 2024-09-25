@@ -97,14 +97,13 @@ In the dataset, cell nucleus characteristics are presented in three versions: me
 
 Having mean, SE, and worst values provides a **comprehensive representation of each feature**, helping to understand **central tendency, variability, and extreme cases**. Different aspects of the data can provide critical diagnostic information. Including these different measures allows for better feature engineering and model building. Machine learning models can use these varied perspectives to improve classification accuracy.
 
-### References
-- K. P. Bennett and O. L. Mangasarian: "Robust Linear Programming Discrimination of Two Linearly Inseparable Sets", Optimization Methods and Software 1, 1992, 23-34.
-
-
-### Files to Store and Load once the dataset is downloaded:
+### Files to store and load once dataset is downloaded:
 
 - wdbc.data: Contains the dataset with features and labels.
 - wdbc.names: Contains metadata about the dataset, including variable descriptions and data collection methods.
+
+### References
+- K. P. Bennett and O. L. Mangasarian: "Robust Linear Programming Discrimination of Two Linearly Inseparable Sets", Optimization Methods and Software 1, 1992, 23-34.
 
 
 ## **Machine Learning**
@@ -179,13 +178,13 @@ We evaluate checking how each classification model gives best resuults and comme
   - Reduced Set (13 variables): Precision 0.927, Recall 0.884, F1-Score 0.905. Notable decrease in Recall and precision.
   - Explanation: Variable reduction significantly affects XGBClassifier, possibly because it relies on a broader set of features for optimal performance.
 
- - **Support Vector Machines (SVM)**
+- **Support Vector Machines (SVM)**
   - Complete Set (30 variables): Precision 1.000, Recall 0.930, F1-Score 0.964. Performance: Very good, with perfect precision and slight impact on Recall.
   - Reduced Set (13 variables): Precision 1.000, Recall 0.884, F1-Score 0.938. Maintains high precision, with a slight decrease in Recall.
   - Explanation: SVM shows robustness to variable reduction, possibly due to its ability to maximize decision margins with fewer features.
 
 **Best Models:**
-- Linear SVC, Logistic Regression, and SVM
+- Linear SVC, Logistic Regression, and Support Vector Machines (SVM)
 - These models maintain high levels of precision and Recall even with variable reduction, making them ideal for detecting malignant tumors.
 
 **Less Efficient Model:**
@@ -194,4 +193,4 @@ We evaluate checking how each classification model gives best resuults and comme
 **Practical Decision:** 
 - To detect malignant tumors with this dataset, we recommended using Linear SVC, Logistic Regression, Support Vector Machines, or Multilayer Perceptron, as they are excellent overall when working with both the complete and reduced datasets. They offer a relative balance between precision and Recall, minimizing both false negatives and false positives. 
 
-- In practice, it is recommended to use more than one model and, if possible, those that work differently, to be able to contrast the results of one and the other and proceed to clinical studies in case of doubt.
+- It is recommended to use more than one model and, if possible, those that work differently, to be able to contrast the results of one and the other and proceed to clinical studies in case of doubt.
