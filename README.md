@@ -182,6 +182,8 @@ We evaluate checking how each classification model gives best resuults and comme
   - Complete Set (30 variables): Precision 1.000, Recall 0.930, F1-Score 0.964. Performance: Very good, with perfect precision and slight impact on Recall.
   - Reduced Set (13 variables): Precision 1.000, Recall 0.884, F1-Score 0.938. Maintains high precision, with a slight decrease in Recall.
   - Explanation: SVM shows robustness to variable reduction, possibly due to its ability to maximize decision margins with fewer features.
+ 
+## **Conclusions:**
 
 **Best Models:**
 - Linear SVC, Logistic Regression, and Support Vector Machines (SVM)
